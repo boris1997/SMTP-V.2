@@ -38,7 +38,7 @@
   &__btn {
     width: rem(277px);
     height: rem(58px);
-    border-radius: rem(12px);
+    border-radius: rem(4px);
     margin-top: rem(32px);
     font-size: rem(16px);
     color: $primaryColor;
@@ -50,8 +50,8 @@
         url("../../assets/svg/bases/download/icon.svg"),
         0,
         0,
-        rem(-192px),
-        0,
+        rem(30px),
+        auto,
         auto
       );
       height: rem(24px);
