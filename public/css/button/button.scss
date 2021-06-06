@@ -22,7 +22,7 @@
     transition-delay: 0.25s;
   }
   &:active &__span {
-    z-index: 1;
+    z-index: 1 !important;
   }
   &__main {
     background-color: $primaryColor;
@@ -50,7 +50,7 @@
   &__span {
     align-self: baseline;
     margin-left: rem(28px);
-    z-index: 0;
+    z-index: 0 !important;
   }
 
   &__toggler {
