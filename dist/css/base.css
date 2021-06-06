@@ -399,6 +399,143 @@ $lightGrey: #edf0f5; */
   background: #44d5fc;
 }
 
+.btn {
+  outline: none;
+  background-color: transparent;
+  margin-top: 0;
+  position: relative;
+  height: 3.125rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  -o-transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  /*   &:active {
+    background-color: #0c3ab1 !important;
+  } */
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 0 10px rgb 0 0 0/30%;
+  box-shadow: 0 0 10px rgb 0 0 0/30%;
+}
+
+.btn:not(:active) .btn__span {
+  -webkit-transition: z-index 0s ease-in-out;
+  -o-transition: z-index 0s ease-in-out;
+  transition: z-index 0s ease-in-out;
+  -webkit-transition-delay: 0.25s;
+  -o-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.btn:active .btn__span {
+  z-index: 1 !important;
+}
+
+.btn__main {
+  background-color: #ffffff;
+  color: #0e1e35;
+  position: relative;
+}
+
+.btn__main:after {
+  position: absolute;
+  content: url("../assets/svg/chevron-right.svg");
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 1.125rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 0.75rem;
+}
+
+.btn__main:hover {
+  border: none;
+}
+
+.btn__span {
+  -ms-flex-item-align: baseline;
+  align-self: baseline;
+  margin-left: 1.75rem;
+  z-index: 0 !important;
+}
+
+.btn__transparent {
+  background-color: transparent;
+  border: 0.0625rem solid #ffffff;
+}
+
+.btn__transparent:active {
+  border: none;
+}
+
+.btn__linear,
+.btn__transparent {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.btn__transparent .btn__span,
+.btn__linear .btn__span {
+  margin-left: 0;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.btn__linear {
+  background: -webkit-gradient(linear, left top, right top, from(#16d9e3), color-stop(47%, #26c2e9), to(#46aef7));
+  background: -o-linear-gradient(left, #16d9e3 0%, #26c2e9 47%, #46aef7 100%);
+  background: linear-gradient(90deg, #16d9e3 0%, #26c2e9 47%, #46aef7 100%);
+}
+
+.btn__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* .incDec-btn--minus {
+  position: relative;
+} */
+
 .articles {
   background: url("../assets/backgrounds/main/programm-background.svg") no-repeat center center/cover;
 }
@@ -907,143 +1044,6 @@ $lightGrey: #edf0f5; */
 .item-suitBase__text {
   max-width: 20rem;
 }
-
-.btn {
-  outline: none;
-  background-color: transparent;
-  margin-top: 0;
-  position: relative;
-  height: 3.125rem;
-  border-radius: 0.25rem;
-  font-weight: 500;
-  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
-  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
-  -o-transition: transform 0.3s, box-shadow 0.3s;
-  transition: transform 0.3s, box-shadow 0.3s;
-  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
-  /*   &:active {
-    background-color: #0c3ab1 !important;
-  } */
-}
-
-.btn:hover {
-  -webkit-box-shadow: 0 0 10px rgb 0 0 0/30%;
-  box-shadow: 0 0 10px rgb 0 0 0/30%;
-}
-
-.btn:not(:active) .btn__span {
-  -webkit-transition: z-index 0s ease-in-out;
-  -o-transition: z-index 0s ease-in-out;
-  transition: z-index 0s ease-in-out;
-  -webkit-transition-delay: 0.25s;
-  -o-transition-delay: 0.25s;
-  transition-delay: 0.25s;
-}
-
-.btn:active .btn__span {
-  z-index: 1 !important;
-}
-
-.btn__main {
-  background-color: #ffffff;
-  color: #0e1e35;
-  position: relative;
-}
-
-.btn__main:after {
-  position: absolute;
-  content: url("../assets/svg/chevron-right.svg");
-  top: 0;
-  bottom: 0;
-  left: auto;
-  right: 1.125rem;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 0.75rem;
-}
-
-.btn__main:hover {
-  border: none;
-}
-
-.btn__span {
-  -ms-flex-item-align: baseline;
-  align-self: baseline;
-  margin-left: 1.75rem;
-  z-index: 0 !important;
-}
-
-.btn__transparent {
-  background-color: transparent;
-  border: 0.0625rem solid #ffffff;
-}
-
-.btn__transparent:active {
-  border: none;
-}
-
-.btn__linear,
-.btn__transparent {
-  color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.btn__transparent .btn__span,
-.btn__linear .btn__span {
-  margin-left: 0;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.btn__linear {
-  background: -webkit-gradient(linear, left top, right top, from(#16d9e3), color-stop(47%, #26c2e9), to(#46aef7));
-  background: -o-linear-gradient(left, #16d9e3 0%, #26c2e9 47%, #46aef7 100%);
-  background: linear-gradient(90deg, #16d9e3 0%, #26c2e9 47%, #46aef7 100%);
-}
-
-.btn__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-/* .incDec-btn--minus {
-  position: relative;
-} */
 
 /*     transition: background 0.3s ease-in-out;
     &:hover .item-suit {
@@ -1626,10 +1626,6 @@ $lightGrey: #edf0f5; */
   opacity: 1;
 }
 
-.afterMailing__sec-title {
-  max-width: 28.1875rem;
-}
-
 .text-accordion__body {
   cursor: pointer;
   display: -webkit-box;
@@ -1653,6 +1649,10 @@ $lightGrey: #edf0f5; */
 .text-accordion__link {
   margin-top: 0 !important;
   text-decoration: underline;
+}
+
+.afterMailing__sec-title {
+  max-width: 28.1875rem;
 }
 
 .tariffsec {

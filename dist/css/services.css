@@ -384,10 +384,6 @@ $lightGrey: #edf0f5; */
   background: #eceff4 !important;
 }
 
-.articles {
-  background: url("../assets/backgrounds/main/programm-background.svg") no-repeat center center/cover;
-}
-
 .btn {
   outline: none;
   background-color: transparent;
@@ -484,6 +480,10 @@ $lightGrey: #edf0f5; */
 /* .incDec-btn--minus {
   position: relative;
 } */
+
+.articles {
+  background: url("../assets/backgrounds/main/programm-background.svg") no-repeat center center/cover;
+}
 
 /*     transition: background 0.3s ease-in-out;
     &:hover .item-suit {
